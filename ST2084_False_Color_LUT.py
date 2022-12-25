@@ -55,7 +55,7 @@ def main():
                 col = colour.algebra.lerp(numpy.greater(original, green_cyan_lower), col, [0.0, 1.0, 0.5])
 
                 # middle grey zone
-                col = colour.algebra.lerp(numpy.greater(original, mid_grey_lower), col, [0.5, 0.5, 0.5])
+                col = colour.algebra.lerp(numpy.greater(original, mid_grey_lower), col, [0.36435, 0.36435, 0.36435])
 
                 # green yellow zone
                 col = colour.algebra.lerp(numpy.greater(original, green_yellow_lower), col, [0.5, 1, 0.0])
