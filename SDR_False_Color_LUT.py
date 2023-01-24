@@ -2,10 +2,10 @@ import colour
 import numpy
 
 # define breaking points, numbers are percentages
-white_lower = 99
-red_lower = 90
-orange_lower = 70
-yellow_lower = 40
+white_lower = 93
+red_lower = 80
+orange_lower = 60
+yellow_lower = 45
 green_yellow_lower = 30
 mid_grey_lower = 15
 green_cyan_lower = 5
@@ -19,11 +19,11 @@ def main():
     # resolution of the 3DLUT
     LUT_res = 45
 
-    LUT = colour.LUT3D(name=f'False Color LUT for AgX SDR Imagery',
+    LUT = colour.LUT3D(name=f'False Color LUT for AgX Imagery',
                        size=LUT_res)
 
     LUT.domain = ([[0.0, 0.0, 0.0], [1.0, 1.0, 1.0]])
-    LUT.comments = [f'A Post Formation False Color LUT for AgX SDR Image Formation',
+    LUT.comments = [f'A Post Formation False Color LUT for AgX Image Formation',
                     f'This LUT expects values from 0.0 to 1.0, with inverse power function of 3.0 for precision reason']
 
     x, y, z, _ = LUT.table.shape
@@ -76,7 +76,7 @@ def main():
 
     colour.write_LUT(
         LUT,
-        f"AgX_False_Color_SDR.cube")
+        f"AgX_False_Color.cube")
     print(LUT)
 
 
