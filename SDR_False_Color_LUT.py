@@ -4,15 +4,15 @@ import numpy
 # define breaking points, numbers are percentages
 white_lower = 93
 red_lower = 80
-orange_lower = 60
-yellow_lower = 45
-green_yellow_lower = 30
-mid_grey_lower = 15
+orange_lower = 55
+yellow_lower = 35
+green_yellow_lower = 22
+mid_grey_lower = 16
 green_cyan_lower = 5
 cyan_lower = 0.5
 blue_cyan_lower = 0.02
-blue_lower = 0.0001
-black_lower = 0
+blue_lower = 0.005
+black_lower = 0.0005
 
 
 def main():
