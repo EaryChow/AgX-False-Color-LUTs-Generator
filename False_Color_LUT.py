@@ -21,7 +21,7 @@ black_lower = 0
 
 
 def false_color(col):
-    # col = colour.models.exponent_function_basic(col, 3.0, 'basicFwd')
+    col = colour.models.exponent_function_basic(col, 2.5, 'basicFwd')
 
     col = col * 100
 
